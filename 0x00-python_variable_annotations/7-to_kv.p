@@ -1,18 +1,11 @@
 #!/usr/bin/env python3
-'''
-Creates a tuple from 2 variables
+'''Module for converting a key and its value to a tuple.
 '''
 from typing import Union, Tuple
 
 
 def to_kv(k: str, v: Union[int, float]) -> Tuple[str, float]:
-    '''
-    Creates a tuple from a string and value
-
-    Args:
-        k: String variable acts as key
-        v: Int | Float variable acts as value
-
-    Returns: Tuple of Key and value squared
+    '''Converts a key and its value to a tuple of the key and
+    the square of its value.
     '''
     return (k, float(v**2))
